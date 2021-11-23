@@ -49,6 +49,26 @@ Inspired by https://github.com/johnjohndoe/TypedPreferences - version 1.0
 		testImplementation 'junit:junit:4.13'
 	}
 ```
+## Usage
+
+#### Include following code in your layout:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+</DirectionalLayout>
+```
+
+#### In code
+```
+super.onStart(intent);
+        super.setUIContent(ResourceTable.Layout_ability_main);
+
+```
 
 ## License
 
