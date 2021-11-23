@@ -68,19 +68,19 @@ public class LongPrefTest {
     public void testPreferenceToEqualValue6(){
         mpreference5.set(MTESTVALUE5);
         final long value = mpreference5.get();
-        Assert.assertEquals(value, MTESTVALUE5);
+        Assert.assertEquals(MTESTVALUE5,value);
     }
     @Test
     public void testPreferenceNotToEqualValue6(){
         mpreference5.set(77L);
         final long value = mpreference5.get();
-        Assert.assertNotEquals(value, MTESTVALUE5);
+        Assert.assertNotEquals(MTESTVALUE5,value);
     }
     @Test
     public void testPreferenceToBeUnset6(){
         mpreference5.set(MTESTVALUE5);
         mpreference5.delete();
         final long value = mpreference5.get();
-        Assert.assertNotEquals(value, MTESTVALUE5);
+        Assert.assertNotEquals(MTESTVALUE5,value);
     }
 }

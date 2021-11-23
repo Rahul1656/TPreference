@@ -88,6 +88,6 @@ public class FloatPrefTest {
     public void testPreferenceToBeUnset3(){
         mpreference3.set(MTESTVALUE3);
         mpreference3.delete();
-        Assert.assertNotEquals(mpreference3.get(), MTESTVALUE3);
+        Assert.assertNotEquals(MTESTVALUE3,mpreference3.get());
     }
 }

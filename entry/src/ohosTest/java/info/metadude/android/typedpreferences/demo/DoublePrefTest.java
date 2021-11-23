@@ -79,13 +79,13 @@ public class DoublePrefTest {
     @Test
     public void testPreferenceNotToEqualValue4(){
         mpreference2.set(66.66d);
-        Assert.assertNotEquals(mpreference2.get(), MTESTVALUE2);
+        Assert.assertNotEquals(MTESTVALUE2,mpreference2.get());
     }
 
     @Test
     public void testPreferenceToBeUnset4(){
         mpreference2.set(MTESTVALUE2);
         mpreference2.delete();
-        Assert.assertNotEquals(mpreference2.get(), MTESTVALUE2);
+        Assert.assertNotEquals(MTESTVALUE2,mpreference2.get());
     }
 }

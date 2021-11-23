@@ -75,7 +75,7 @@ public class ShortPrefTest {
     public void testPreferenceToEqualValue1(){
         mpreference6.set(MTESTVALUE6);
         final short value = mpreference6.get();
-        Assert.assertEquals(value, MTESTVALUE6);
+        Assert.assertEquals(MTESTVALUE6,value);
     }
 
     @Test

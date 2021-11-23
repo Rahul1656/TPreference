@@ -74,7 +74,7 @@ public class IntPrefTest {
     public void testPreferenceToEqualValue2(){
         mpreference4.set(MTESTVALUE4);
         final int value = mpreference4.get();
-        Assert.assertEquals(value, MTESTVALUE4);
+        Assert.assertEquals(MTESTVALUE4,value);
     }
 
     @Test

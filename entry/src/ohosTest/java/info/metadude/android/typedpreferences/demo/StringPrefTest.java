@@ -73,19 +73,19 @@ public class StringPrefTest {
     @Test
     public void testPreferenceToEqualValue() {
         mpreference7.set(MTESTVALUE7);
-        Assert.assertEquals(mpreference7.get(), MTESTVALUE7);
+        Assert.assertEquals(MTESTVALUE7,mpreference7.get());
     }
 
     @Test
     public void testPreferenceNotToEqualValue() {
         mpreference7.set("Something else");
-        Assert.assertNotEquals(mpreference7.get(), MTESTVALUE7);
+        Assert.assertNotEquals(MTESTVALUE7,mpreference7.get());
     }
 
     @Test
     public void testPreferenceToBeUnset(){
         mpreference7.set(MTESTVALUE7);
         mpreference7.delete();
-        Assert.assertNotEquals(mpreference7.get(), MTESTVALUE7);
+        Assert.assertNotEquals(MTESTVALUE7,mpreference7.get());
     }
 }
