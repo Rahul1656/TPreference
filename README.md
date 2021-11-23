@@ -27,8 +27,6 @@ public class StringPreference {
 }
 ```
 
-Wrappers for frequently used classes can be found and added in the [wiki][typedpreferences-wiki]. Take a look!
-
 ## Source
 
 Inspired by https://github.com/johnjohndoe/TypedPreferences - version 1.0
